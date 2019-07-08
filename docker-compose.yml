@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  jupyter-notebook:
+    container_name: jupyter-notebook
+    command: start-notebook.sh --NotebookApp.token=''
+    image: jupyter/datascience-notebook
+    ports:
+      - 8081:8888
+
